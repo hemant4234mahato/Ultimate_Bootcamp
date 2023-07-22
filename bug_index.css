@@ -184,7 +184,7 @@ align-content: center; */
     background-image: url('bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    transform: scale(-1);
+
 
 }
 
@@ -204,7 +204,7 @@ align-content: center; */
     background-image: url('black-board.jpg');
     margin: 0px;
     padding: 0px;
-    transform: scale(-1);
+    /* transform: scale(-1); */
     height: 95vh;
     width: 32vw;
     background-size: contain;
