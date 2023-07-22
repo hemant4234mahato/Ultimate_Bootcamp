@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bug_index.css">
+    <script src="https://kit.fontawesome.com/359ca7e543.js" crossorigin="anonymous"></script>
+
+    <title>index</title>
+</head>
+
+<body>
+
+
+    <div class="navbar" style="padding: none;">
+        <div class="logo" style="padding-left: 30px;">
+            <a href="">Bug Creators</a>
+        </div>
+        <ul class="links">
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li><a href="">SERVICES</a></li>
+            <li><a href="">HELP</a></li>
+        </ul>
+        <a href="" class="action_btn">Sign Up</a>
+        <div class="toggle_btn" style="padding-right: 30px;">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li><a href="">SERVICES</a></li>
+            <li><a href="">HELP</a></li>
+            <li><a href="" class="action_btn">get started</a></li>
+        </div>
+    </div>
+
+
+    <div class="home" style="padding-top: 10%;">
+        <div class="home-bg">
+
+            <div class="black-board">
+                <div class="bg-image">
+                    <div id="para">
+                        <p> hello</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- <div class="search">
+                <input type="search" placeholder="Search Here">
+            </div> -->
+        </div>
+    </div>
+
+
+    <footer>
+
+        <div class="foot">
+            <a href><i class="fa-brands fa-facebook"
+                    style="color: white;font-size: 30px;"></i></a>
+            <a href><i class="fa-brands fa-instagram"
+                    style="color: white;font-size: 30px;"></i></a>
+            <a href><i class="fa-brands fa-twitter"
+                    style="color: white;font-size: 30px;"></i></a>
+            <a href><i class="fa-brands fa-youtube"
+                    style="color: white;font-size: 30px;"></i></a>
+            <a href><i class="fa-brands fa-whatsapp"
+                    style="color: white;font-size: 30px;"></i></a>
+        </div>
+
+        <div class="details">
+
+            <div class="company test lnk">
+                <h3>Company</h4>
+                <ul>
+                    <li><a href>About Us</a></li>
+                    <li><a href>Contributors</a></li>
+                </ul>
+            </div>
+
+            <div class="products test lnk">
+                <h3>Products</h4>
+                <ul>
+                    <li><a href>hello</a></li>
+                    <li><a href>hello</a></li>
+                    <li><a href>hello</a></li>
+                    <li><a href>hello</a></li>
+                </ul>
+            </div>
+
+            <div class="useful-links test lnk">
+                <h3>Useful Links</h4>
+                <ul>
+                    <li><a href>hello</a></li>
+                    <li><a href>hello</a></li>
+                    <li><a href>hello</a></li>
+                    <li><a href>hello</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-us test lnk">
+                <h3>Contact Us</h4>
+            </div>
+        </div>
+
+        <h5 style="margin-top: 0px;color: white;text-align: center;"><i
+                class="fa-regular fa-copyright " style="color: white;"></i>2020-25
+            BugCreators,Inc.All Rights Reserved</h5>
+    </footer>
+
+
+
+
+
+
+
+
+    <script>
+        const togglebtn = document.querySelector('.toggle_btn')
+        const togglebtnicon = document.querySelector('.toggle_btn i')
+        const dropdownmenu = document.querySelector('.dropdown_menu')
+
+        togglebtn.onclick = function () {
+            dropdownmenu.classList.toggle('open')
+            const isopen = dropdownmenu.classList.contains('open')
+
+            togglebtnicon.classList = isopen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+        const textDisplay = document.getElementById('para');
+        const phrases = ['Hello my Name is Sareen ', 'I Love to Code ', 'I am from Sambalpur '];
+        let i = 0;
+        let j = 0;
+        let isDeleting = false;
+        let currentPhrase = [];
+
+        function loop() {
+            isEnd = false;
+            textDisplay.innerHTML = currentPhrase.join('');
+
+
+            if (i < phrases.length) {
+                // console.log(phrases[i]);
+                if (!isDeleting && j <= phrases[i].length) {
+                    // console.log(phrases[i][j]);
+                    currentPhrase.push(phrases[i][j]);
+                    j++;
+                }
+
+                if (isDeleting && j <= phrases[i].length) {
+                    currentPhrase.pop(phrases[i][j]);
+                    j--;
+                }
+
+                if (j == phrases[i].length) {
+                    isEnd = true;
+                    isDeleting = true;
+                }
+
+                if (isDeleting && j == 0) {
+                    currentPhrase = [];
+                    isDeleting = false
+                    i++;
+                }
+
+                if (i == phrases.length) {
+                    i = 0;
+                }
+            }
+            const speedUp = Math.random() * (80 - 50) + 50;
+            const normalSpeed = Math.random() * (300 - 200) + 200;
+            const time = isEnd ? 2000 : isDeleting ? speedUp : normalSpeed;
+            setTimeout(loop, time);
+        }
+
+        loop()
+
+
+        const foot = document.querySelectorAll('footer > .foot > a > i');
+            // console.log(foot.classList.add("fa-shake"));
+            foot.forEach((e)=>
+                e.addEventListener('mouseover',()=>{    
+                    // console.log(foot.classList);
+                    e.classList.add("fa-shake");
+            })
+            )
+            foot.forEach((e)=>
+                e.addEventListener('mouseout',()=>{    
+                    // console.log(foot.classList);
+                    e.classList.remove("fa-shake");
+            })
+            )
+    </script>
+</body>
+
+</html>
