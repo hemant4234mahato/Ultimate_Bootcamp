@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            display: flex;
+            min-height: 100vh;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loginform{
+            background-color: #16181f;
+            height: 440px;
+            width: 400px;  
+            border-radius: 20px;
+        }
+
+        .loginform .form{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            width: 100%;
+        }
+
+        .loginform .form h2{
+            color: white;
+            width: fit-content;
+            margin-bottom: 40px;
+            font-size: 2rem;
+        }
+
+        .loginform .form label{
+            color: white;
+            position:relative;
+            right: 15%;
+            font-size: 1.2em;
+        }
+
+        .loginform .form input{
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid black;
+            outline: none;
+            font-size: 1.1em;
+            font-weight: 400;
+        }
+
+        .loginform .form button{
+            height: 25px;
+            width: 30%;
+            border-radius: 6px;
+            border: none;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        .icon{
+            color: red;
+            position: absolute;
+            top:15px;
+            right: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="loginform">
+        <div class="form">
+        <h2>Sign In</h2>
+        <label for="inp">User Name</label><br>
+        <input type="text"><br>
+
+        <label for="pass">Password</label><br>
+        <input type="password"><br><br>
+
+        <button>Sign In</button>
+        <a class="icon" href=""><i class="fa-solid fa-circle-xmark fa-xl" style="color: black;"></i></a>
+    </div>
+</div>
+
+<!-- <script src="signin.js"></script> -->
+</body>
+</html>
