@@ -1,10 +1,39 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "username": "xyz",
-        "email": "email@gmail.com",
-        "password": "password"
-      }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "username": "xyz",
+      "email": "email@gmail.com",
+      "password": "password",
+      "recipie": [
+        {
+          "recipie-id": 1,
+          "recipie-name": "BANANA PANCAKES",
+          "img-link": "\"https://th.bing.com/th/id/OIP.motKKNqqdS6wgGO52oO5nAHaKX?w=208&h=291&c=7&r=0&o=5&pid=1.7\"",
+          "video-link": "\"https://www.youtube.com/embed/V3kKP0f3yB0\"",
+          "ingredients": ["Ripe banana", "Eggs(2)", "Tablespoons of oats(2-4)"],
+          "steps": ["Make the pancake batter by adding the ingredients and mixing them throughly.", "Pour the batter(1/4 cup) on a medium heated nonstick cooking pan.","When the pancake loosens flip the other side to bake.","Stack 3-4 such pancakes one upon another and shower some honey(optional) or eat directly."],
+          "rating": 4.7
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "username": "xxzzz",
+      "email": "email@gmail.com",
+      "password": "password"
+    },
+    {
+      "id": 3,
+      "username": "abc",
+      "email": "email@gmail.com",
+      "password": "password"
+    },
+    {
+      "id": 4,
+      "username": "abcd",
+      "email": "email@gmail.com",
+      "password": "password"
+    }
+  ]
 }

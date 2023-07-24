@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="search-bar">
+            <input type="text" placeholder="search" id="search">
+            <button onclick="searched()" id="btn">Search</button>
+        </div>
+
+        
+            <table id="table">
+                
+            </table>
+      
+
+        <h2 id="head"></h2>
+
+        <script>
+            const search = document.getElementById('search');
+            
+            // console.log(search.value);
+
+            function searched(){
+                var val=[];
+                // console.log(search.value.length);
+                fetch('http://localhost:3000/users')
+                .then(response=>response.json())
+                .then(data=>{
+                    // const s = data.find(el=> el.username === search);
+                    
+                    // const user = data.find(el => el.username.slice(search.length) === search.value);
+                    // console.log(user);
+                
+                    data.forEach((e)=>{
+                        
+                        
+                        if(e.username.substr(0,search.value.length) === search.value && search.value.length){
+                            val.splice(0,0,e.username);
+                            
+                            // count++;
+                        }
+                    })
+                    // console.log(val);
+                    
+                    // console.log(div);
+                    var table = document.getElementById("table");
+                    
+                    // console.log(el);
+                    for(i=0;i<val.length;i++){
+                    let row = table.insertRow(0);
+                    let cell = row.insertCell(0);
+                    cell.innerHTML = `<a href="">${val[i]}</a>`;
+                }
+                })
+                
+               
+                
+            }
+
+            
+            
+        </script>
+    </body>
+</html>
