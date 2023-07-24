@@ -29,7 +29,7 @@ section .imgbx::before{
     mix-blend-mode: screen; */
 }
 
-img{
+section .imgbx img{
     position: absolute;
     top: 0;
     left: 0;
@@ -54,7 +54,7 @@ section .contentbx .formbx{
     position: relative;
     margin: 6% auto;
     background: #ffffff12;
-    background-color: #06a4ff98;
+    background-color: #06a4ff;
     padding: 5px;
     overflow: hidden;
 
@@ -104,7 +104,7 @@ section .contentbx .formbx .inputbx span{
     font-size: 16px;
     margin-bottom: 5px;
     display: inline-block;
-    color: #1e6589;
+    color: #607D8B;
     font-weight: 300;
     font-size: 16px;
     letter-spacing: 1px;
@@ -165,13 +165,13 @@ section .contentbx .formbx .inputbx p a{
     section .contentbx .formbx{
         width: 80%;
         padding: 0px;
-        background-color: rgba(0, 80, 218, 0.653);
+        background-color: rgba(0, 80, 218, 0.534);
         margin: 0px;
         border-radius: 30px;
         overflow: hidden;
     }
     section .contentbx .formbx h3{
-        color: #193542;
+        color: #607D8B;
         text-align: center;
         margin: 30px 0 10px;
         font-weight: 500;
