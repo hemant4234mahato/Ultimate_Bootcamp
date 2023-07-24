@@ -12,6 +12,28 @@ body { font-family: sans-serif; background-color: rgb(81, 80, 80); }
   background: #333;
 }
 
+.carousel1 {
+  background: #EEE;
+}
+
+.carousel-cell1 {
+  margin-right: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-cell1 img {
+  display: block;
+  height: 100%;
+  width:100%
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel-cell1 img {
+    height: 400px;
+  }
+}
+
 .carousel {
   background: #5e5e5e;
 }
