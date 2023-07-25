@@ -1,4 +1,6 @@
 let val = [];
+
+
 // console.log(val);
 // document.write("HEllo");
 
@@ -85,6 +87,8 @@ function gotRecipie() {
 
               ingredients.innerHTML=el.recipie[i].ingredients;
               youtube.setAttribute("src",el.recipie[i].videoLink);
+
+              creatediv(el.recipie[i].steps);
               
             }
           }
@@ -93,4 +97,16 @@ function gotRecipie() {
         }
       });
     });
+}
+
+function creatediv(value){
+  let div = document.getElementById('recipie-container');
+  
+
+for(i=0;i<value.length;i++){
+  let p = document.createElement('p');
+  p.innerHTML=value[i]+"<br>";
+  div.appendChild(p);
+}
+
 }
