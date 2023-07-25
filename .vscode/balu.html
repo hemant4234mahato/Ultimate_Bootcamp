@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="slideshow1.css"> -->
+    <style>
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left:30%;
+}
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; background-color: rgb(81, 80, 80); }
+.flickity-button {
+  background: #333;
+}
+
+.carousel1 {
+  background: #EEE;
+}
+
+.carousel-cell1 {
+  margin-right: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-cell1 img {
+  display: block;
+  height: 100%;
+  width:100%
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel-cell1 img {
+    height: 400px;
+  }
+}
+
+.carousel {
+  background: #5e5e5e;
+}
+
+.carousel-cell {
+
+  width: 20%;
+  height: 200px;
+  margin-right: 10px;
+  background: rgb(242, 246, 242);
+  border-radius: 5%;
+  counter-increment: carousel-cell;
+}
+
+.carousel-cell.is-selected {
+  background-color: blue;
+}
+.bottom-left{
+  color: azure;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-cell img {
+  display: block;
+  width: 100%;
+  border-radius: 5%;
+}
+@media screen and ( min-width: 768px ) {
+  .carousel-cell img {
+    height: 200px;
+  }
+}
+
+    </style>
+    <link rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  </head>
+  <body>
+    <!-- --------- -->
+    <h1>Flickity - keyhole parallax</h1>
+
+    <div class="carousel1" data-flickity='{ "groupCells": 1,
+  "wrapAround": true,"autoPlay": 3000,"pauseAutoPlayOnHover": false,"pageDots": false }'>
+      <div class="carousel-cell1">
+        <img
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg"
+          alt="orange tree" />
+      </div>
+      <div class="carousel-cell1">
+        <img
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg"
+          alt="One World Trade" />
+      </div>
+      <div class="carousel-cell1">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg"
+          alt="drizzle" />
+      </div>
+      <div class="carousel-cell1">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg"
+          alt="cat nose" />
+      </div>
+      <div class="carousel-cell1">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg"
+          alt="contrail" />
+      </div>
+      <div class="carousel-cell1">
+        <img
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg"
+          alt="golden hour" />
+      </div>
+      <div class="carousel-cell1">
+        <img
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg"
+          alt="flight formation" />
+      </div>
+    </div>
+
+    <!-- --------- -->
+    <h1>TODAYS SPECIAL</h1>
+    <div class="carousel" data-flickity='{ "groupCells": 1,
+  "wrapAround": true,"autoPlay": 3000,"pauseAutoPlayOnHover": false,"pageDots": false }'>
+      <div class="carousel-cell">
+        <!-- <a href="" "> -->
+          <img class="image" id="image" onclick="getRecipie('TANDOOR PANEER TIKKA')"
+            src="https://2.bp.blogspot.com/-neI6rKuvsKI/VyN8GMrfhzI/AAAAAAAAHls/hugFFTKYgs8lrtUSXx0iEyG-KZwL4bPbwCLcB/s1600/tandoori-paneer-tikka4.jpg"
+            alt="Avatar">
+        <!-- </a> -->
+        <div class="bottom-left">TANDOOR PANEER TIKKA</div>
+      </div>
+      <div class="carousel-cell">
+        <a href>
+          <!-- <img class="image" id="image" src="Chicken-Do-Pyaza.jpg" alt="Avatar"> -->
+        </a>
+        <div class="bottom-left">CHICKEN-DO-PYAZA</div>
+      </div>
+      <div class="carousel-cell">
+        <a href>
+          <!-- <img class="image" id="image" src="chole-bhture-recipe.webp" -->
+            alt="Avatar">
+        </a>
+        <div class="bottom-left">CHOLE-BHTURE</div>
+      </div>
+      <div class="carousel-cell">
+        <a href>
+          <!-- <img cl="image" src="samose.jpeg" alt="Avatar"> -->
+        </a>
+        <div class="bottom-left">SAMOSA</div>
+      </div>
+      <div class="carousel-cell">
+        <a href>
+          <!-- <img cl="image" src="chicken-butter-masala.jpeg" alt="Avatar"> -->
+        </a>
+        <div class="bottom-left">CHICKEN BUTTER MASALA</div>
+      </div>
+      <div class="carousel-cell">
+        <a href>
+          <!-- <img cl="image" src="chicken-biryani.jpeg" alt="Avatar"> -->
+        </a>
+        <div class="bottom-left">CHICKEN BIRYANI</div>
+      </div>
+      <div class="carousel-cell">
+        <a href>
+          <!-- <img cl="image" src="Malvani_Fish_Curry_Recipe_.jpg" alt="Avatar"> -->
+        </a>
+        <div class="bottom-left">FISH CURRY</div>
+      </div>
+      <div class="carousel-cell">
+        <a href>
+          <!-- <img cl="image" src="soya-chaap.jpg" alt="Avatar"> -->
+        </a>
+        <div class="bottom-left">TANDOORI SOYA CHAAP</div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <!-- <h1>NORTH INDIAN</h1>
+    <div class="carousel" data-flickity='{ "groupCells": 1,
+  "wrapAround": true,"autoPlay": 3000,"pauseAutoPlayOnHover": false,"pageDots": false }'>
+      <div class="carousel-cell"><a href>
+          <img class="image" id="image" src="hakka-noodle.jpeg" alt="Avatar">
+        </a>
+        <div class="bottom-left">HAKKA NOODLE</div>
+      </div>
+      <div class="carousel-cell">
+        <a href>
+          <img class="image" src="PALAK PANEER.jpeg" alt="Avatar">
+        </a>
+        <div class="bottom-left">PALAK PANEER</div>
+      </div>
+      <div class="carousel-cell">
+        <a href>
+          <img class="image" src="chicken-butter-masala.jpeg" alt="Avatar">
+        </a>
+        <div class="bottom-left">CHICKEN BUTTER MASALA</div>
+      </div>
+      <div class="carousel-cell">
+        <a href>
+          <img class="image" src="CHICKEN-TANDOOR.jpeg" alt="Avatar">
+        </a>
+        <div class="bottom-left">CHICKEN TANDOOR</div>
+      </div>
+      <div class="carousel-cell">
+        <a href>
+          <img class="image" src="chicken-biryani.jpeg" alt="Avatar">
+        </a>
+        <div class="bottom-left">CHICKEN BIRYANI</div>
+      </div>
+      <div class="carousel-cell">
+        <a href>
+          <img class="image"
+            src="https://foodyoushouldtry.com/wp-content/uploads/2017/04/dal-fry.jpg"
+            alt="Avatar">
+        </a>
+        <div class="bottom-left">DAL FRY</div>
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <h1>SOUTH INDIAN</h1>
+    <div class="carousel" data-flickity='{ "groupCells": 1,
+  "wrapAround": true,"autoPlay": 3000,"pauseAutoPlayOnHover": false,"pageDots": false }'>
+      <div class="carousel-cell"><a href>
+          <img class="image" id="image" src="DOSA.jpeg" alt="Avatar">
+        </a>
+        <div class="bottom-left">DOSA</div>
+      </div>
+      <div class="carousel-cell">
+        <a href>
+          <img class="image" src="IDLI.jpeg" alt="Avatar">
+        </a>
+        <div class="bottom-left">IDLI</div>
+      </div>
+      <div class="carousel-cell">
+        <a href>
+          <img class="image" src="UPMA.jpeg" alt="Avatar">
+        </a>
+        <div class="bottom-left">UPMA</div>
+      </div>
+      <div class="carousel-cell">
+        <a href>
+          <img class="image"
+            src="https://www.cookwithkushi.com/wp-content/uploads/2016/08/IMG_2038_.jpg"
+            alt="Avatar">
+        </a>
+        <div class="bottom-left">BANANA CHIPS</div>
+      </div>
+      <div class="carousel-cell">
+        <a href>
+          <img class="image" src="UTTAPAM.jpeg" alt="Avatar">
+        </a>
+        <div class="bottom-left">UTTAPAM</div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <h1>TRY OUT THE DESSERT</h1>
+    <div class="carousel" data-flickity='{ "groupCells": 1,
+  "wrapAround": true,"autoPlay": 3000,"pauseAutoPlayOnHover": false,"pageDots": false }'>
+      <div class="carousel-cell"><a href>
+          <img class="image" id="image" src="chesecake.jpg" alt="Avatar">
+        </a>
+        <div class="bottom-left">CHEESE CAKE</div>
+      </div>
+      <div class="carousel-cell">
+        <a href>
+          <img class="image" src="RASGULLA.jpeg" alt="Avatar">
+        </a>
+        <div class="bottom-left">RASGULLA</div>
+      </div>
+      <div class="carousel-cell">
+        <a href>
+          <img class="image" src="gulab-jamun.jpeg" alt="Avatar">
+        </a>
+        <div class="bottom-left">GULAB JAMUN</div>
+      </div>
+      <div class="carousel-cell">
+        <a href>
+          <img class="image" id="image" src="jalabi.jpeg" alt="Avatar">
+        </a>
+        <div class="bottom-left">JALABI</div>
+      </div>
+
+      <div class="carousel-cell">
+        <a href>
+          <img class="image" id="image" src="icecream.jpeg" alt="Avatar">
+        </a>
+        <div class="bottom-left">ICECREAM</div>
+      </div>
+      <div class="carousel-cell">
+        <a href>
+          <img class="image" id="image"
+            src="https://th.bing.com/th/id/OIP.motKKNqqdS6wgGO52oO5nAHaKX?w=208&h=291&c=7&r=0&o=5&pid=1.7"
+            alt="Avatar">
+        </a>
+        <div class="bottom-left">BANANA PANCAKE</div>
+      </div>
+    </div> -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script src="balu.js"> 
+//     // document.write("HEllo");
+//       // console.clear();
+//       // console.log("Hello");
+//       function getRecipie(value){
+//         // alert(value);
+//         let val=[];
+//     fetch('http://localhost:3000/users')
+//     .then(response=>response.json())
+//     .then(data=>{
+      
+//       //Here we will find out all the items named value=Tandoor Paneer Tikka and keep the searched values in the val variable which is an Array  
+      
+//         data.forEach((e)=>{
+//           // if(e.recipie.recipie-name)
+//           for(i=0;i<e.recipie.length;i++){
+//             // console.log(e.recipie[i].recipieName);
+//             if(e.recipie[i].recipieName === value){
+//               val.splice(1,0,e.recipie[i]);
+//               // console.log(val[1]);
+//             }
+//           }
+//         })
+//         // console.log(val[0]);
+
+//         //To find the MAx RAting product
+
+//         if(val.length != 0){
+//         let max = val[0].rating;
+//         for(i=1;i<val.length;i++){
+//           if(val[i].rating > max){
+//             max = val[i].rating;
+//           }
+//         }
+
+//         alert(max);
+
+
+//         //Now we will assign the max rated food in to the HTML elements 
+      
+//       }else{
+//         alert("No Data Found");
+//       }
+
+//         // alert(max);
+
+//         //now to check if result found or not 
+        
+//     })
+//     .catch(error=>{
+//         console.log("error",error);
+//     })
+// }      
+  </script>
+  </body>
+</html>
