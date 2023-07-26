@@ -11,7 +11,7 @@ body {
 .split {
   height: 80%;
   width: 49.8%;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 10%;
   overflow-x: hidden;
@@ -40,6 +40,16 @@ body {
 .centered img {
   width: 150px;
 }
+
+#recipie-container{
+  background-color: black;
+  position: absolute;
+  top:95%;
+  border-radius: 15%;
+  padding: 25px;
+  width: 80vw;
+  right: 10%;
+}
 </style>
 </head>
 <body onload="gotRecipie()">
@@ -58,6 +68,10 @@ body {
         <p id="ingredients"></p>
     </div>
   </div>
+</div>
+
+<div id="recipie-container">
+
 </div>
      <script src="balu.js"></script>
 </body>
