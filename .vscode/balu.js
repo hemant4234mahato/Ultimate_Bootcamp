@@ -1,6 +1,5 @@
 let val = [];
-
-
+let i;
 // console.log(val);
 // document.write("HEllo");
 
@@ -16,19 +15,20 @@ function getRecipie(value) {
       //Here we will find out all the items named value=Tandoor Paneer Tikka and keep the searched values in the val variable which is an Array
 
       data.forEach((e) => {
-        // if(e.recipie.recipie-name)
+       
         for (i = 0; i < e.recipie.length; i++) {
           // console.log(e.recipie[i].recipieName);
           if (e.recipie[i].recipieName === value) {
+
             val.splice(1, 0, e.recipie[i]);
             // console.log(val[1]);
           }
         }
       });
       // console.log(val[0]);
-
+      
       //To find the MAx RAting product
-      let index;
+      let index = 0;
       if (val.length != 0) {
         let max = val[0].rating;
 
@@ -39,10 +39,9 @@ function getRecipie(value) {
             index = i;
           }
         }
-
-        alert(index);
-        console.log(val);
-
+  //now we got max rating
+        
+console.log(index);
         // Now we have assign the data to the html elements of recipie.html
 
         // youtube.setAttribute("src","val[index].videoLink");
@@ -82,14 +81,13 @@ function gotRecipie() {
             if (el.recipie[i].id == recipieid) {
               // console.log(el.recipie[i]);
 
-              const ingredients = document.getElementById('ingredients');
+              const ingredients = document.getElementById("ingredients");
               const youtube = document.getElementById("youtube");
 
-              ingredients.innerHTML=el.recipie[i].ingredients;
-              youtube.setAttribute("src",el.recipie[i].videoLink);
+              ingredients.innerHTML = el.recipie[i].ingredients;
+              youtube.setAttribute("src", el.recipie[i].videoLink);
 
               creatediv(el.recipie[i].steps);
-              
             }
           }
         } else {
@@ -99,14 +97,13 @@ function gotRecipie() {
     });
 }
 
-function creatediv(value){
-  let div = document.getElementById('recipie-container');
-  
+function creatediv(value) {
+  let div = document.getElementById("recipie-container");
 
-for(i=0;i<value.length;i++){
-  let p = document.createElement('p');
-  p.innerHTML=value[i]+"<br>";
-  div.appendChild(p);
-}
-
+  console.log(div);
+  for (i = 0; i < value.length; i++) {
+    let p = document.createElement("p");
+    p.innerHTML = value[i] + "<br>";
+    div.appendChild(p);
+  }
 }
