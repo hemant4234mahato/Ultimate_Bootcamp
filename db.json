@@ -2,7 +2,7 @@
   "users": [
       {
         "id": 1,
-        "useName": "xyz",
+        "userName": "xyz",
         "email": "email@gmail.com",
         "password": "password",
         "recipie": [
@@ -122,7 +122,7 @@
       },
       {
         "id": 2,
-        "useName": "abc",
+        "userName": "abc",
         "email": "email@gmail.com",
         "password": "abc123",
         "recipie": [
@@ -141,7 +141,7 @@
               "2.Pour the batter(1/4 cup) on a medium heated nonstick cooking pan.",
               "3.When the pancake loosens flip the other side to bake.",
               "4.Stack 3-4 such pancakes one upon another and shower some honey(optional) or eat directly."],
-            "rating": 4.7
+            "rating": 4.2
           }
         ]
       }
