@@ -36,6 +36,13 @@
         input[type="range"]{
             accent-color:red;
         }
+        input[type="number"] {
+            width: 50px;
+            padding: 2px 2px;
+            border-radius: 8px;
+            border: 2px solid black;
+        }
+
     </style>
 </head>
 <body>
@@ -51,7 +58,9 @@
         RECIPIE-STEPS
         <input type="text" placeholder="Enter steps" id="step"><br>
         RATING
-        1<input type="range" id="rating" min="1" max="5" step="0.2">5<br>
+        1<input type="range" id="rating" min="1" max="5" step="0.1" onchange="fet()">5<br>
+        <input type="number"  class="rvd" id="rv">
+        <br>
         <button onclick="add()">CREATE-POST</button>
     </form>
     <button onclick="getData()">SHOW DATA</button>
@@ -60,5 +69,12 @@
     <div id="form-container" >
     </div>
     <script src="./createEditDelete.js"></script>
+    <script>
+
+        function fet() {
+            var rate=document.getElementById('rating').value;
+            document.getElementById("rv").value=rate;
+        }
+    </script>
 </body>
 </html>
