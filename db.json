@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "username": "23",
+      "email": "23@gmail.com",
+      "password": "234",
+      "id": 1
+    },
+    {
+      "username": "24",
+      "email": "24@gmail.com",
+      "password": "245",
+      "id": 2
+    },
+    {
+      "username": "231",
+      "email": "231@gmail.com",
+      "password": "2314",
+      "id": 3
+    }
+  ],
+  "blogs": [
+    {
+      "title": null,
+      "description": null,
+      "id": 1
+    },
+    {
+      "title": "b1",
+      "description": "my 5th blog is here",
+      "id": 2
+    }
+  ]
+}
