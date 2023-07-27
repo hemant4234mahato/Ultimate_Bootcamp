@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+.food_types{
+    padding: 20px 40px;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.landing{
+    display: flex;
+}
+.landing img{
+    width: 70%;
+    height: 60%;
+    size: 400px;
+}
+
+.boxcon{
+    margin: auto;
+    margin-top: 4%;
+    position:relative;
+    width: 30%;
+    height: 42px;
+    padding-right: 50px;
+    border: 4px solid blue;
+    border-radius: 50px;
+}
+
+.elements{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.search{
+    border: none;
+    height: 100%;
+padding: 0px 5px;
+border-radius: 50px;
+}

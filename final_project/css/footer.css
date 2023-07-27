@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Dosis:wght@200;400&family=Open+Sans:wght@300;400&display=swap');
+
+body {
+    font-family: 'Arial', serif;
+}
+
+footer {
+    background-color: black;
+    height: 420px;
+    width: 100vw;
+}
+
+.foot {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.foot a {
+    margin: 25px;
+    margin-top: 20px;
+}
+
+.fa-facebook:hover {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#4267B2, #4267B2, #4267B2);
+    /* (#515BD4,,#8134AF,#DD2A7B,#FEDA77,#F58529) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-instagram:hover {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529);
+    /* (#515BD4,,#8134AF,#DD2A7B,#FEDA77,#F58529) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-twitter:hover {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#1D9BF0, #1D9BF0, #1D9BF0);
+    /* (#515BD4,,#8134AF,#DD2A7B,#FEDA77,#F58529) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-youtube:hover {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#CD201F, #CD201F, #CD201F);
+    /* (#515BD4,,#8134AF,#DD2A7B,#FEDA77,#F58529) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-whatsapp:hover {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#25D366, #25D366, #25D366);
+    /* (#515BD4,,#8134AF,#DD2A7B,#FEDA77,#F58529) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.details {
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 50px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+
+.lnk {
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.details div {
+    margin: 70px;
+    margin-top: 20px;
+}
+
+.details ul {
+    margin-top: 10px;
+}
+
+.details li {
+    margin-top: 5px;
+}
+
+.details li a {
+    color: white;
+}
+
+.details h3 {
+    color: rgb(174, 14, 14);
+}

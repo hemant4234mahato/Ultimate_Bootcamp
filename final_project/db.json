@@ -1,0 +1,168 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "userName": "xyz",
+      "email": "email@gmail.com",
+      "password": "password",
+      "recipie": [
+        {
+          "userid": 1,
+          "id": 1,
+          "recipieName": "BANANA PANCAKES",
+          "imgLink": "https://th.bing.com/th/id/OIP.motKKNqqdS6wgGO52oO5nAHaKX?w=208&h=291&c=7&r=0&o=5&pid=1.7",
+          "videoLink": "https://www.youtube.com/embed/V3kKP0f3yB0",
+          "ingredients": [
+            "1.Ripe banana",
+            "2.Eggs(2)",
+            "3.Tablespoons of oats(2-4)"
+          ],
+          "steps": [
+            "1.Make the pancake batter by adding the ingredients and mixing them throughly.",
+            "2.Pour the batter(1/4 cup) on a medium heated nonstick cooking pan.",
+            "3.When the pancake loosens flip the other side to bake.",
+            "4.Stack 3-4 such pancakes one upon another and shower some honey(optional) or eat directly."
+          ],
+          "rating": 4.7
+        },
+        {
+          "userid": 1,
+          "id": 2,
+          "recipieName": "DAL FRY",
+          "imgLink": "https://foodyoushouldtry.com/wp-content/uploads/2017/04/dal-fry.jpg",
+          "video-link": "https://www.youtube.com/embed/8VmHKCI7gMM",
+          "ingredients": [
+            "1.Dal(toor dal or arhar dal)",
+            "2.Ghee or oil",
+            "3.Onions(1-2)",
+            "4.Tomatoes(1-2)",
+            "5.Spices(musturd and cumin seeds,ginger-garlic paste,turmeric,garam masala,chilli powder,chillies,kasuri methi)"
+          ],
+          "steps": [
+            "1.Take about 1 cup of soaked dal with 2 and 1/2 cups of water into the pressure cooker.",
+            "2.Let it cook for 2 whistles on medium heat and then open the pressure cooker.",
+            "3.Heat 1 and 1/2 spoon of ghee in a pan.",
+            "4.1/2 teaspoon of cumin seeds and 1 broken dried red chilli.",
+            "4.Add 1/8 teespoon of hing and 1 curry leaf.",
+            "5.Add finely chopped onionds and 1-2 chopped green chilli.",
+            "6.Add ginger garlic paste and 1/2 cup of chopped tomatoes.",
+            "7.Saute until the tomatoes turn mushy and soft.",
+            "8.Add masalas 1/4 teaspoon turmaric,garam masala and chili powder.",
+            "9.Now add the cooked dal into the mixture.",
+            "10.Let it cook for 4-5 minutes."
+          ],
+          "rating": 4.5
+        },
+        {
+          "userid": 1,
+          "id": 3,
+          "recipieName": "TANDOOR PANEER TIKKA",
+          "imgLink": "https://2.bp.blogspot.com/-neI6rKuvsKI/VyN8GMrfhzI/AAAAAAAAHls/hugFFTKYgs8lrtUSXx0iEyG-KZwL4bPbwCLcB/s1600/tandoori-paneer-tikka4.jpg",
+          "videoLink": "https://www.youtube.com/embed/IS7T_PhffGs",
+          "ingredients": [
+            "1.Paneer",
+            "2.Marinade(hung curd and spices powder)",
+            "3.veggies(bell peppers and onions)"
+          ],
+          "steps": [
+            "1.You will need ½ cup each of onions and capsicum.cut them into big pieces.",
+            "2.You will need 1 tablespoon of crushed ginger-garlic paste.",
+            "3.Slice 200 to 250 grams block or paneer into cubes or squares and keep aside.",
+            "4.Put 200 grams hung curd in a bowl. With a whisk beat the curd lightly till smoothand add the spices powder.",
+            "5.Add ½ tablespoon lemon juice and salt and mustard oil.",
+            "6.Mix well then Add the onions, capsicum and paneer to the marinade.",
+            "7.Cover and keep the marinated paneer and veggies in the refrigerator for 2 hours or more.",
+            "8.Begin to thread the veggies and paneer alternately on bamboo skewers. and grill then at 230 to 240 degrees celsius for 15 to 20 minutes.",
+            "9.let them cool and then enjoy."
+          ],
+          "rating": 4
+        },
+        {
+          "userid": 1,
+          "id": 4,
+          "recipieName": "BANANA CHIPS",
+          "imgLink": "https://www.cookwithkushi.com/wp-content/uploads/2016/08/IMG_2038_.jpg",
+          "videoLink": "https://www.youtube.com/embed/TS9NEZ3dUGw",
+          "ingredients": [
+            "1.Raw banana(2-3)",
+            "2.Coconut oil(300 ml)"
+          ],
+          "steps": [
+            "1.Peel the skin of banana and slice it into very thin slices.",
+            "2.place a kadai, pour enough coconut oil on high flame.",
+            "3.heat the coconut oil for 5 minutes, take a small piece of banana pour in to the oil.",
+            "4.check both the sides are well fried or not else.",
+            "5.deep fry and take out the chips.",
+            "6.season it with salt and enjoy."
+          ],
+          "rating": 3.5
+        },
+        {
+          "userid": 1,
+          "id": 5,
+          "recipieName": "TANDOOR PANEER TIKKA",
+          "imgLink": "https://2.bp.blogspot.com/-neI6rKuvsKI/VyN8GMrfhzI/AAAAAAAAHls/hugFFTKYgs8lrtUSXx0iEyG-KZwL4bPbwCLcB/s1600/tandoori-paneer-tikka4.jpg",
+          "videoLink": "https://www.youtube.com/embed/IS7T_PhffGs",
+          "ingredients": [
+            "1.Paneer",
+            "2.Marinade(hung curd and spices powder)",
+            "3.veggies(bell peppers and onions)"
+          ],
+          "steps": [
+            "1.You will need ½ cup each of onions and capsicum.cut them into big pieces.",
+            "2.You will need 1 tablespoon of crushed ginger-garlic paste.",
+            "3.Slice 200 to 250 grams block or paneer into cubes or squares and keep aside.",
+            "4.Put 200 grams hung curd in a bowl. With a whisk beat the curd lightly till smoothand add the spices powder.",
+            "5.Add ½ tablespoon lemon juice and salt and mustard oil.",
+            "6.Mix well then Add the onions, capsicum and paneer to the marinade.",
+            "7.Cover and keep the marinated paneer and veggies in the refrigerator for 2 hours or more.",
+            "8.Begin to thread the veggies and paneer alternately on bamboo skewers. and grill then at 230 to 240 degrees celsius for 15 to 20 minutes.",
+            "9.let them cool and then enjoy."
+          ],
+          "rating": 4.9
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "userName": "abc",
+      "email": "email@gmail.com",
+      "password": "abc123",
+      "recipie": [
+        {
+          "userid": 2,
+          "id": 1,
+          "recipieName": "BANANA PANCAKES",
+          "imgLink": "https://th.bing.com/th/id/OIP.motKKNqqdS6wgGO52oO5nAHaKX?w=208&h=291&c=7&r=0&o=5&pid=1.7",
+          "videoLink": "https://www.youtube.com/embed/V3kKP0f3yB0",
+          "ingredients": [
+            "1.Ripe banana",
+            "2.Eggs(2)",
+            "3.Tablespoons of oats(2-4)"
+          ],
+          "steps": [
+            "1.Make the pancake batter by adding the ingredients and mixing them throughly.",
+            "2.Pour the batter(1/4 cup) on a medium heated nonstick cooking pan.",
+            "3.When the pancake loosens flip the other side to bake.",
+            "4.Stack 3-4 such pancakes one upon another and shower some honey(optional) or eat directly."
+          ],
+          "rating": 4.2
+        }
+      ]
+    }
+  ],
+  "admin": [
+    {
+      "username": "erp",
+      "email": "erp@gmail.com",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "username": "23",
+      "email": "23@gmail.com",
+      "password": "234",
+      "id": 2
+    }
+  ]
+}

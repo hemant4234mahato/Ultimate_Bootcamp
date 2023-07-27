@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="./css/newsign.css">
+</head>
+<body>
+    <section>
+        <div class="imgbx">
+            <img src="1.jpg" alt="">
+        </div>
+
+        <div class="contentbx">
+            <div class="formbx">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="signin()">Sign In</button>
+                    <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
+                </div>
+                <div id="signin" class="input-group">
+                    <div class="inputbx">
+                        <span>Username</span>
+                        <input type="text" id="username" placeholder="Enter your Username">
+                    </div>
+                    <div class="inputbx">
+                        <span>Password</span>
+                        <input type="password" id="password" placeholder="Enter your Password">
+                    </div>
+                    <div class="inputbx">
+                        <button onclick="login()">Login</button>
+                    </div>
+                    <div class="inputbx">
+                        <p>Don't have an account ? <button type="button" class="gr-btn" onclick="signup()">Sign Up</button>
+                        </p>
+                    </div>
+                </div>
+
+
+                <form id="signup" class="input-group">
+                    <div class="inputbx">
+                        <span>Username</span>
+                        <input type="text" id="username1" required>
+                    </div>
+                    <div class="inputbx">
+                        <span>email</span>
+                        <input type="text" id="email1" required>
+                    </div>
+                    <div class="inputbx">
+                        <span>Password</span>
+                        <input type="password" id="password1" required>
+                    </div>
+                    <div class="inputbx">
+                        <button type="submit">Sign up</button>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+    </section>
+    <script src="login.js"></script>
+    <script src="signup.js"></script>
+
+    <script>
+        var x=document.getElementById("signin");
+        var y=document.getElementById("signup");
+        var z=document.getElementById("btn");
+
+        function signup(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+        function signin(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0px";
+        }
+   </script>
+</body>
+</html>
