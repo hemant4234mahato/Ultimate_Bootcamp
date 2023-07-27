@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #form-container{
+        background-color: red;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="newform">
+        
+        <input type="text" placeholder="Enter recipie-name" id="recipiename">
+        <input type="text" placeholder="Enter img-link" id="img">
+        <input type="text" placeholder="Enter video-link" id="video">
+        <input type="text" placeholder="Enter ingredients" id="ingredients">
+        <input type="text" placeholder="Enter steps" id="step">
+        <input type="number" placeholder="Enter rating from 1 to 5" id="rating">
+        <button onclick="add()">Create post</button>
+    </form>
+    <button onclick="getData()"> get data</button>
+    </div>
+    <hr>
+    <div id="form-container" >
+    </div>
+    <script src="./createEditDelete.js"></script>
+</body>
+</html>
