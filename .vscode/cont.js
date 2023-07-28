@@ -22,7 +22,7 @@ const Display = document.getElementById('cont');
         counts=0;
         Display.innerHTML=currentPhrases.join('');
     }
-}
+} 
     
 
     if(k<phrasess.length){
