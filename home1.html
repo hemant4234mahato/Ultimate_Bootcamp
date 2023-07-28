@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css"
+        integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('agengsans.ttf');
+
+        * {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        body {
+            background-image: url('bg2.jpg');
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .home {
+            /* background-image: url('bg1.jpg'); */
+            /* height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            background-repeat: no-repeat; */
+            display: flex;
+            /* padding: 200px;
+            padding-top: 100px; */
+        }
+
+        img {
+            position: absolute;
+            right: 10%;
+            max-inline-size: 100%;
+            block-size: auto;
+            height: 90vh;
+            width: 60vh;
+            top: 7%;
+            border-radius: 10%;
+            /* aspect-ratio: 2/1; */
+        }
+
+        .text {
+            position: absolute;
+            right: 11.7%;
+            top: 16%;
+            width: 53vh;
+            text-align: left;
+        }
+
+        h2 {
+
+            text-align: center;
+            margin-bottom: 60px;
+            margin-top: -10px;
+            font-family: "Times New Roman", cursive, sans-serif;
+            font-size: 25px;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+            color: #000000;
+            font-weight: 700;
+            text-transform: capitalize;
+            font-variant: small-caps;
+            border-bottom: 22px double;
+            border-radius: 100%;
+            padding-bottom: 20px;
+            padding-top: 0;
+        }
+
+        /* .main_container{
+            display: flex;
+        }
+        .main_container .logo{
+            margin-top: 30px;      
+            margin-left: 50px;  
+        }
+        .main_container .explore{
+            margin-top: 300px;      
+            margin-left: 150px;  
+        }
+        .main_container .explore button{
+            width: 250px; 
+            height: 60px; 
+            margin: 10px; 
+            border-radius: 40px; 
+            background: rgba(0, 213, 255, 0.42);
+        }
+        .main_container .explore button a{
+            border-radius: 10px; 
+            padding: 50px;padding-top: 
+            20px; margin-top: 30px; 
+            color: red; font-size: 30px;
+        }
+        .main_container .sign_in{
+            margin-top: 30px;      
+            margin-left: 200px;  
+        }
+
+        .main_container .sign_in button{
+            width: 100px; 
+            height: 30px; 
+           margin: 10px;
+           padding-bottom: 10px;
+            border-radius: 40px; 
+            background: rgba(0, 213, 255, 0.42);
+        }
+        .main_container .sign_in button a{
+            border-radius: 10px; 
+            padding: 0px;padding-top: 
+            20px; margin-top: 30px; 
+            color: red; 
+            font-size: 30px;
+      */
+
+        .left-container {
+            top: 5%;
+            background-color: rgba(0, 0, 0, 0.278);
+            /* backdrop-filter: blur(10px); */
+            height: 90vh;
+            width: 50vw;
+            position: absolute;
+            margin-left: 2%;
+            border-radius: 20px;
+            backdrop-filter: blur(2px);
+        }
+
+        .left-container:hover {
+            transition: 0.4s ease-in-out;
+            height: 90.4vh;
+            width: 51vw;
+            backdrop-filter: blur(5px);
+        }
+
+
+
+
+        .btn {
+            font-size: 17px;
+            background: transparent;
+            border: none;
+            padding: 1em 1.5em;
+            color: black;
+            text-transform: uppercase;
+            position: relative;
+            transition: .5s ease;
+            margin-top: 7%;
+            margin-left: 7%;
+            height: 10vh;
+            width: 10vw;
+            background-color: #ffc506;
+            border-radius: 10px;
+            box-shadow: 15px 15px 30px rgb(25, 25, 25), ;
+        }
+
+        .lgin {
+            align-items: center;
+            appearance: none;
+            background-color: #FCFCFD;
+            border-radius: 4px;
+            border-width: 0;
+            box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px, rgba(45, 35, 66, 0.15) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+            box-sizing: border-box;
+            color: #36395A;
+            cursor: pointer;
+            display: inline-flex;
+            font-family: "JetBrains Mono", monospace;
+            height: 48px;
+            justify-content: center;
+            line-height: 1;
+            list-style: none;
+            overflow: hidden;
+            padding-left: 16px;
+            padding-right: 16px;
+            position: absolute;
+            text-align: left;
+            text-decoration: none;
+            transition: box-shadow .15s, transform .15s;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: nowrap;
+            will-change: box-shadow, transform;
+            font-size: 18px;
+            right: 18%;
+            top: 10%;
+            margin-top: -1px;
+        }
+
+        .lgin:focus {
+            box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+        }
+
+        .lgin:hover {
+            box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px, rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+            transform: translateY(-2px);
+        }
+
+        .lgin:active {
+            box-shadow: #D6D6E7 0 3px 7px inset;
+            transform: translateY(2px);
+        }
+
+        .contents {
+            background-color: ;
+            margin-top: 20%;
+            text-align: center;
+        }
+
+
+        .contents h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            text-align: left;
+            color: white;
+        }
+
+        .para p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 300;
+            position: fixed;
+            top: 52%;
+            text-align: left;
+            color: white;
+        }
+
+        .h {
+            margin-left: 20%;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            position: fixed;
+            top: 60%;
+            margin-left: 19%;
+        }
+
+        .input {
+            min-height: 50px;
+            width: 23vw;
+            padding: 0 1rem;
+            color: black;
+            font-size: 18px;
+            border: 1px solid #5e4dcd;
+            border-radius: 6px 0 0 6px;
+            background-color: rgba(255, 255, 255, 0.81);
+        }
+
+        .button--submit {
+            min-height: 50px;
+            padding: .5em 1em;
+            border: none;
+            border-radius: 0 6px 6px 0;
+            background-color: #cc4242;
+            color: #fff;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background-color .3s ease-in-out;
+        }
+
+        .button--submit:hover {
+            background-color: #ff0000;
+        }
+
+        .input:focus,
+        .input:focus-visible {
+            border-color: #3898EC;
+            outline: none;
+        }
+
+
+        .explorer {
+            width: 120px;
+            height: 40px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+            background: #e62222;
+            position: fixed;
+            top: 80%;
+            margin-left: 10%;
+        }
+
+
+
+        .explorer:hover {
+            transition: 0.5s;
+            background-color: #ff0000;
+            width: 135px;
+            height: 45px;
+        }
+
+        .text {
+            color: black;
+        }
+
+        i {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body onload="tyepWritercont()">
+
+
+    <div class="home">
+        <div class="bg">
+            <!-- <div class="black-board">
+                    <img src="bb1.jpg" alt>
+                    <div class="text">
+                        <h2 style="color: rgb(225, 171, 35);font-size: 4rem;">Menu</h2>
+                        <h4 id="heading"
+                            style="color: white;font-size: 1.1vw;margin-top: -30px;">heading</h4><br><br>
+                        <p id="ingredients"
+                            style="color: white;font-size: 0.8vw;">Lorem, ipsum
+                            dolor sit amet consectetur adipisicing elit. Non
+                            neque quod magni debitis ducimus fugiat nisi minus.
+                            Cumque ut aliquid molestiae ipsa iusto doloribus
+                            laborum atque harum odio nemo delectus, deleniti
+                            tenetur accusantium soluta maxime illum facilis
+                            magni commodi repudiandae temporibus. A amet iste
+                            expedita recusandae quasi. Eius, neque, distinctio
+                            reiciendis, libero impedit obcaecati praesentium
+                            consequuntur facere modi fugiat animi! Architecto
+                            alias molestiae deleniti iure facilis, ex quo
+                            quaerat aut. Velit unde ipsam qui quis autem tempore
+                            quos minus neque placeat nulla illo earum cumque
+                            amet, eaque voluptatibus, perferendis facere
+                            veritatis ducimus debitis expedita obcaecati
+                            molestias? Atque provident porro alias.</p>
+                    </div>
+                </div> -->
+
+        </div>
+    </div>
+
+    <div class="left-container">
+        <div class="logo">
+            <button class="btn">BUG</button>
+        </div>
+        <div class="log">
+            <button class="lgin"><a href="newsign.html" style="text-decoration: none;">LOG IN</a></button>
+        </div>
+
+        <div class="contents h">
+            <h1 id="cont">heading</h1>
+
+        </div>
+        <div class="para h">
+            <p style="font-size: 1.2em;">Then, why not try our recipes ??</p>
+        </div>
+
+        <div class="input-group">
+            <input type="email" class="input" id="Email" name="Email" placeholder="bugcreators@gmail.com"
+                autocomplete="off">
+            <input class="button--submit" value="Subscribe" type="submit">
+        </div>
+
+        <div class="exp">
+            <button class="explorer">
+                <a href="bugcreators_index.html" style="text-decoration: none;">
+                    Explore<i class="fa-regular fa-compass fa-beat"></i>
+                </a>
+                <!-- <span class="icon"></span> -->
+            </button>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        function todayspecial() {
+
+
+            fetch("http://localhost:3000/users")
+                .then((response) => response.json())
+                .then((data) => {
+                    //Here we will find out all the items named value=Tandoor Paneer Tikka and keep the searched values in the val variable which is an Array
+                    let max = 0;
+                    let i = 0;
+                    let choice;
+                    let heading;
+
+                    data.forEach((e) => {
+
+                        for (i = 0; i < e.recipie.length; i++) {
+                            if (e.recipie[i].rating > max) {
+                                max = e.recipie[i].rating;
+                                choice = e.recipie[i].steps;
+                                heading = e.recipie[i].recipieName;
+                            }
+                        }
+                    })
+
+                    localStorage.setItem("recipie", choice);
+                    //  
+                    document.getElementById('heading').innerHTML = "TRY " + heading;
+
+                    tyepWriter();
+                })
+                .catch((error) => {
+                    console.log("error", error);
+                });
+        }
+        let num = 0;
+        // console.log(localStorage.getItem('recipie').split(".,"));
+
+
+        //TypeWriter Function
+
+        const textDisplay = document.getElementById('ingredients');
+        const phrases = localStorage.getItem('recipie').split(".,,.");//['Hello my Name is Sareen ','I Love to Code ','I am from Sambalpur '];
+        let i = 0;
+        let j = 0;
+        let isDeleting = false;
+        let currentPhrase = [];
+        let count = 0;
+
+        function tyepWriter() {
+            isEnd = false;
+            if ((currentPhrase.slice(-1) == '.' || currentPhrase.slice(-1) == ",") && count < 2) {
+                if (count == 1) {
+                    currentPhrase.pop();
+                }
+                count++;
+            } else {
+                if (count == 2) {
+                    count = 0;
+
+                    textDisplay.innerHTML = currentPhrase.join('');
+                } else {
+                    count = 0;
+                    textDisplay.innerHTML = currentPhrase.join('');
+                }
+            }
+
+
+            if (i < phrases.length) {
+                // console.log(phrases[i]);
+                if (!isDeleting && j <= phrases[i].length) {
+                    // console.log(phrases[i][j]);
+                    currentPhrase.push(phrases[i][j]);
+                    j++;
+                }
+
+                if (isDeleting && j <= phrases[i].length) {
+                    currentPhrase.pop(phrases[i][j]);
+                    j--;
+                }
+
+                if (j == phrases[i].length) {
+                    isEnd = true;
+                    isDeleting = true;
+                }
+
+                if (isDeleting && j == 0) {
+                    currentPhrase = [];
+                    isDeleting = false
+                    i++;
+                }
+
+                if (i == phrases.length) {
+                    i = 0;
+                }
+            }
+            const speedUp = Math.random() * (80 - 50) + 50;
+            const normalSpeed = Math.random() * (300 - 200) + 200;
+            const time = isEnd ? 2000 : isDeleting ? speedUp : normalSpeed;
+            setTimeout(tyepWriter, 1000);
+        }
+
+    </script>
+    <script src="cont.js"></script>
+</body>
+
+</html>
+
+<!--  -->

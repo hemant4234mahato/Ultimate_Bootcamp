@@ -1,0 +1,86 @@
+/* external css: flickity.css */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left:30%;
+}
+* { box-sizing: border-box; 
+  font-family: 'Open Sans', sans-serif;}
+
+body { font-family: sans-serif; background-color: rgb(81, 80, 80); }
+.flickity-button {
+  background: #33333300;
+}
+
+.carousel1 {
+  background: #eeeeee00;
+  font-family: 'Open Sans', sans-serif;
+}
+.food_types{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.carousel-cell1 {
+  margin-right: 20px;
+  overflow: hidden;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.carousel-cell1 img {
+  display: block;
+  height: 100%;
+  width:100%
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel-cell1 img {
+    height: 400px;
+  }
+}
+
+.carousel {
+  background: #5e5e5e00;
+  font-family: 'Open Sans', sans-serif;}
+
+.carousel-cell {
+
+  width: 20%;
+  height: 200px;
+  margin-right: 10px;
+  background: rgba(242, 246, 242, 0);
+  border-radius: 5%;
+  counter-increment: carousel-cell;
+  font-family: 'Open Sans', sans-serif;}
+
+.carousel-cell.is-selected {
+  background-color: blue;
+}
+.bottom-left{
+  color: azure;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 1px 2px 2px black;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-cell img {
+  display: block;
+  width: 100%;
+  border-radius: 5%;
+}
+@media screen and ( min-width: 768px ) {
+  .carousel-cell img {
+    height: 200px;
+  }
+}

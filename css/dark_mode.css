@@ -1,0 +1,65 @@
+
+
+
+label {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label input {
+    position: absolute;
+    opacity: 0;
+}
+
+.sun{
+    position: absolute;
+    font-size: 2em;
+    color: #ff7707;    
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, .5));
+    transform: scale(0);
+    transition: 1s ease;
+}
+
+input:checked~.sun{
+    transition-delay: .8s;
+    transform: scale(1) rotate(360deg);
+}
+
+.moon {
+    font-size: 2em;
+    color: #bfbfbf;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, .5));
+    transition: 3sec;
+    transition: 1s ease;
+    transition-delay: .8s;
+}
+
+input:checked~.moon{
+    transition-delay: 0s;
+    transform: rotate(360deg) scale(0);
+}
+
+.toggle {
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #2b2b2b;
+    border-radius: 50px;
+    box-shadow:
+        inset 0 8px 60px rgba(0, 0, 0, .1),
+        inset 0 8px 8px rgba(0, 0, 0, .1),
+        inset 0 -4px 4px rgba(0, 0, 0, .1);
+    z-index: -1;
+    transition: 1s;
+}
+
+input:checked~.toggle {
+    background: white;
+}
+

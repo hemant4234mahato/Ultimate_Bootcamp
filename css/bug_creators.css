@@ -1,0 +1,13 @@
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode .detail h1{
+  color: white;
+}
+
+.heading h1{
+  color: rgb(32, 203, 212);
+}
+

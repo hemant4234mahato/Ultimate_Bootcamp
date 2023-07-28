@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/359ca7e543.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+    <link rel="stylesheet" type="text/html" href="./css/nav_bar.css">
+    <link rel="stylesheet" href="./css/slideshow1.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/bugcreators_index.css">
+    <link rel="stylesheet" href="./css/dark_mode.css">
+    <link rel="stylesheet" href="./css/main_nav.css">
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="./css/bug_creators.css">
+</head>
+
+<body onload="load()" style="margin: 0;">
+
+    <!-- <nav>
+        <div class="logo">
+            <a href="">BUG</a>
+        </div>
+        <div class="toggle">
+            <a href=""><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <ul class="menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <div class="signin">
+            <a href="">Signin</a>
+        </div>
+    </nav> -->
+
+
+    <nav>
+        <div class="logo">
+            <h3>BUG</h3>
+        </div>
+        <label>
+            <input type="checkbox" name="" id="darkmode">
+            <ion-icon name="sunny" class="sun" onclick="darkMode(false)"></ion-icon>
+            <ion-icon name="moon" class="moon" onclick="darkMode(true)"></ion-icon>
+            <span class="toggle"></span>
+        </label>
+        <ul>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="services1.html">Services</a>
+            </li>
+            <li>
+                <a href="#footer_contact">Contact</a>
+            </li>
+            <li>
+                <button>
+                    <a href="newsign.html">SignIn</a>
+                </button>
+            </li>
+        </ul>
+
+    </nav>
+
+
+
+
+    <div>
+        <div class="carousel1" data-flickity='{ "groupCells": 1,
+  "wrapAround": true,"autoPlay": 3000,"pauseAutoPlayOnHover": false,"pageDots": false }'>
+            <div class="carousel-cell1">
+                <img src="summer.jpg" alt="orange tree" />
+            </div>
+            <div class="carousel-cell1">
+                <img src="monsoon.jpg" alt="One World Trade" />
+            </div>
+            <div class="carousel-cell1">
+                <img src="winter.jpg" alt="drizzle" />
+            </div>
+            <div class="carousel-cell1">
+                <img src="summer.jpg" alt="cat nose" />
+            </div>
+
+        </div>
+    </div>
+
+    <div class="search-container">
+        <div class="search-bar">
+            <div class="search_bar">
+                <input type="text" placeholder="Enter any recipe" id="search">
+            </div>
+            <div class="button_bar">
+                <button onclick="searched()" id="btn"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+            </div>
+        </div>
+        <table id="table">
+
+        </table>
+    </div>
+
+
+    <h2 id="head"></h2>
+
+
+
+
+    <div class="hero">
+        <div class="bar">
+            <img src="9.jpg" alt="" class="bar_img">
+            <div class="detail">
+                <h1>Healthy Food</h1>
+                <p style="color: rgb(255, 128, 0);">
+                    Healthy foods are those that provide you with the nutrients you need to sustain your body's
+                    well-being and retain energy.
+                </p>
+                <p style="color: rgb(255, 128, 0);">
+                    Our website serves a healthy food with easy way.
+                </p>
+
+
+                <button type="button"><a href="">explore</a></button>
+
+            </div>
+            <div class="images">
+                <img src="back.webp" alt="" class="back_img">
+                <img src="food9.jpg" alt="" class="front_img">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <h1 class="food_types">TODAYS SPECIAL</h1>
+    <div class="carousel" data-flickity='{ "groupCells": 1,
+  "wrapAround": true,"autoPlay": 3000,"pauseAutoPlayOnHover": false,"pageDots": false }'>
+        <div class="carousel-cell">
+            <img class="image" id="image" 
+                src="https://2.bp.blogspot.com/-neI6rKuvsKI/VyN8GMrfhzI/AAAAAAAAHls/hugFFTKYgs8lrtUSXx0iEyG-KZwL4bPbwCLcB/s1600/tandoori-paneer-tikka4.jpg"
+                onclick="getRecipie('TANDOOR PANEER TIKKA')">
+            <div class="bottom-left">TANDOOR PANEER TIKKA</div>
+        </div>
+        <div class="carousel-cell">
+            
+                <img class="image" id="image" src="Chicken-Do-Pyaza.jpg" onclick="getRecipie('CHICKEN DO PYAZA')">
+            
+            <div class="bottom-left">CHICKEN-DO-PYAZA</div>
+        </div>
+        <div class="carousel-cell">
+            
+                <img class="image" id="image" src="chole-bhture-recipe.webp" onclick="getRecipie('CHOLE BHTURE')">
+            
+            <div class="bottom-left">CHOLE-BHTURE</div>
+        </div>
+        <div class="carousel-cell">
+            
+                <img cl="image" src="samose.jpeg" onclick="getRecipie('SAMOSA')">
+            
+            <div class="bottom-left">SAMOSA</div>
+        </div>
+        <div class="carousel-cell">
+            
+                <img cl="image" src="chicken-butter-masala.jpeg" onclick="getRecipie('CHICKEN BUTTER MASALA')">
+            
+            <div class="bottom-left">CHICKEN BUTTER MASALA</div>
+        </div>
+        <div class="carousel-cell">
+            
+                <img cl="image" src="chicken-biryani.jpeg" onclick="getRecipie('TANDOOR PANEER TIKKA')">
+            
+            <div class="bottom-left">CHICKEN BIRYANI</div>
+        </div>
+        <div class="carousel-cell">
+            
+                <img cl="image" src="Malvani_Fish_Curry_Recipe_.jpg" onclick="getRecipie('FISH CURRY')">
+            
+            <div class="bottom-left">FISH CURRY</div>
+        </div>
+        <div class="carousel-cell">
+            
+                <img cl="image" src="soya-chaap.jpg" onclick="getRecipie('TANDOORI SOYA CHAAP')">
+            
+            <div class="bottom-left">TANDOORI SOYA CHAAP</div>
+        </div>
+    </div>
+
+
+
+    <h1 class="food_types">NORTH INDIAN</h1>
+    <div class="carousel" data-flickity='{ "groupCells": 1,
+  "wrapAround": true,"autoPlay": 3000,"pauseAutoPlayOnHover": false,"pageDots": false }'>
+        <div class="carousel-cell">
+                <img class="image" id="image" src="hakka-noodle.jpeg" onclick="getRecipie('TANDOOR PANEER TIKKA')">
+            
+            <div class="bottom-left">HAKKA NOODLE</div>
+        </div>
+        <div class="carousel-cell">
+            
+                <img class="image" src="PALAK PANEER.jpeg" onclick="getRecipie('TANDOOR PANEER TIKKA')">
+            
+            <div class="bottom-left">PALAK PANEER</div>
+        </div>
+        <div class="carousel-cell">
+            
+                <img class="image" src="chicken-butter-masala.jpeg" onclick="getRecipie('CHICKEN BUTTER MASALA')">
+            
+            <div class="bottom-left">CHICKEN BUTTER MASALA</div>
+        </div>
+        <div class="carousel-cell">
+            
+                <img class="image" src="CHICKEN-TANDOOR.jpeg" onclick="getRecipie('TANDOOR PANEER TIKKA')">
+            
+            <div class="bottom-left">CHICKEN TANDOOR</div>
+        </div>
+        <div class="carousel-cell">
+            
+                <img class="image" src="chicken-biryani.jpeg" onclick="getRecipie('TANDOOR PANEER TIKKA')">
+            
+            <div class="bottom-left">CHICKEN BIRYANI</div>
+        </div>
+        <div class="carousel-cell">
+            
+                <img class="image" src="https://foodyoushouldtry.com/wp-content/uploads/2017/04/dal-fry.jpg"
+                    onclick="getRecipie('TANDOOR PANEER TIKKA')">
+            
+            <div class="bottom-left">DAL FRY</div>
+        </div>
+    </div>
+
+
+
+    <h1 class="food_types">SOUTH INDIAN</h1>
+    <div class="carousel" data-flickity='{ "groupCells": 1,
+  "wrapAround": true,"autoPlay": 3000,"pauseAutoPlayOnHover": false,"pageDots": false }'>
+        <div class="carousel-cell">
+                <img class="image" id="image" src="DOSA.jpeg" onclick="getRecipie('TANDOOR PANEER TIKKA')">
+            
+            <div class="bottom-left">DOSA</div>
+        </div>
+        <div class="carousel-cell">
+            
+                <img class="image" src="IDLI.jpeg" onclick="getRecipie('TANDOOR PANEER TIKKA')">
+            
+            <div class="bottom-left">IDLI</div>
+        </div>
+        <div class="carousel-cell">
+            
+                <img class="image" src="UPMA.jpeg" onclick="getRecipie('TANDOOR PANEER TIKKA')">
+            
+            <div class="bottom-left">UPMA</div>
+        </div>
+        <div class="carousel-cell">
+            
+                <img class="image" src="https://www.cookwithkushi.com/wp-content/uploads/2016/08/IMG_2038_.jpg"
+                    onclick="getRecipie('BANANA CHIPS')">
+            
+            <div class="bottom-left">BANANA CHIPS</div>
+        </div>
+        <div class="carousel-cell">
+            
+                <img class="image" src="UTTAPAM.jpeg" onclick="getRecipie('TANDOOR PANEER TIKKA')">
+            
+            <div class="bottom-left">UTTAPAM</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <h1 class="food_types">TRY OUT THE DESSERT</h1>
+    <div class="carousel" data-flickity='{ "groupCells": 1,
+"wrapAround": true,"autoPlay": 3000,"pauseAutoPlayOnHover": false,"pageDots": false }'>
+        <div class="carousel-cell">
+                <img class="image" id="image" src="chesecake.jpg" onclick="getRecipie('TANDOOR PANEER TIKKA')">
+            
+            <div class="bottom-left">CHEESE CAKE</div>
+        </div>
+        <div class="carousel-cell">
+            
+                <img class="image" src="RASGULLA.jpeg" onclick="getRecipie('TANDOOR PANEER TIKKA')">
+            
+            <div class="bottom-left">RASGULLA</div>
+        </div>
+        <div class="carousel-cell">
+            
+                <img class="image" src="gulab-jamun.jpeg" onclick="getRecipie('TANDOOR PANEER TIKKA')">
+            
+            <div class="bottom-left">GULAB JAMUN</div>
+        </div>
+        <div class="carousel-cell">
+            
+                <img class="image" id="image" src="jalabi.jpeg" onclick="getRecipie('TANDOOR PANEER TIKKA')">
+            
+            <div class="bottom-left">JALABI</div>
+        </div>
+
+        <div class="carousel-cell">
+            
+                <img class="image" id="image" src="icecream.jpeg" onclick="getRecipie('TANDOOR PANEER TIKKA')">
+            
+            <div class="bottom-left">ICECREAM</div>
+        </div>
+        <div class="carousel-cell">
+            
+                <img class="image" id="image"
+                    src="https://th.bing.com/th/id/OIP.motKKNqqdS6wgGO52oO5nAHaKX?w=208&h=291&c=7&r=0&o=5&pid=1.7"
+                    onclick="getRecipie('TANDOOR PANEER TIKKA')">
+            
+            <div class="bottom-left">BANANA PANCAKE</div>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+
+
+
+    <footer>
+
+        <div class="foot">
+            <a href><i class="fa-brands fa-facebook"
+                    style="color: white;font-size: 30px;"></i></a>
+            <a href><i class="fa-brands fa-instagram"
+                    style="color: white;font-size: 30px;"></i></a>
+            <a href><i class="fa-brands fa-twitter"
+                    style="color: white;font-size: 30px;"></i></a>
+            <a href><i class="fa-brands fa-youtube"
+                    style="color: white;font-size: 30px;"></i></a>
+            <a href><i class="fa-brands fa-whatsapp"
+                    style="color: white;font-size: 30px;"></i></a>
+        </div>
+
+        <div class="details">
+
+            <div class="company test lnk">
+                <h3>Company</h4>
+                <ul>
+                    <li><a href>About Us</a></li>
+                    <li><a href>Contributors</a></li>
+                </ul>
+            </div>
+
+            <div class="products test lnk">
+                <h3>Products</h4>
+                <ul>
+                    <li><a href>Readymade Picles</a></li>
+                    <li><a href>Sweets</a></li>
+                    <li><a href>Exotic Spices</a></li>
+                    <li><a href>Sauces</a></li>
+                </ul>
+            </div>
+
+            <div class="useful-links test lnk">
+                <h3>Useful Links</h4>
+                <ul>
+                    <li><a href></a></li>
+                    <li><a href></a></li>
+                    <li><a href></a></li>
+                    <li><a href></a></li>
+                </ul>
+            </div>
+
+            
+        </div>
+
+        <h5 style="margin-top: 0px;color: white;text-align: center;"><i
+                class="fa-regular fa-copyright " style="color: white;"></i>2020-25
+            BugCreators,Inc.All Rights Reserved</h5>
+    </footer>
+
+
+    <script type="text/html" src="slideshow1.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./js/dark_mode.js"></script>
+    <script src="./js/balu.js"></script>
+    <script src="./js/search.js"></script>
+
+    <script>
+        const foot = document.querySelectorAll('footer > .foot > a > i');
+        // console.log(foot.classList.add("fa-shake"));
+        foot.forEach((e) =>
+            e.addEventListener('mouseover', () => {
+                // console.log(foot.classList);
+                e.classList.add("fa-shake");
+            })
+        )
+        foot.forEach((e) =>
+            e.addEventListener('mouseout', () => {
+                // console.log(foot.classList);
+                e.classList.remove("fa-shake");
+            })
+        )
+    </script>
+
+</body>
+
+</html>

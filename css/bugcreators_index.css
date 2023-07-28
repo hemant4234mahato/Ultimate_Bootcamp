@@ -1,0 +1,101 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+.food_types{
+    padding: 20px 40px;
+    text-align: left;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.landing{
+    display: flex;
+}
+.landing img{
+    width: 70%;
+    height: 60%;
+    size: 400px;
+}
+
+.search-bar{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+justify-content: center;
+padding-top: 40px;
+}
+
+.search_bar input{
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    height: 6vh;
+    width: 30vw;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.922);
+    padding-left: 10px;
+    background-color: rgba(22, 22, 31,0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#btn{
+    margin-top: 1.7vh;
+    margin-left: 3px;
+    border: none;
+    background-color: transparent;
+    color: rgb(205, 75, 65);
+
+
+}
+
+#btn:hover{
+    color: blue;
+}
+
+.search-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+#table{
+    margin-top: 60px;
+    border: 2px;
+    float: left;
+    border-radius: 10px;
+}
+
+
+table{
+    height: auto;
+    /* padding: 10px; */
+    width: 30vw;
+    border: none;
+    margin-left: -20px;
+    background-color: antiquewhite;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+td{
+    padding: 5px;
+}
+
+
+
+/* .search-bar input{
+    border-radius: 50px;
+    padding: 5px;
+    padding-left: 10px;
+    width: 30vw;
+    height: 5vh;
+    background-color: #16181f;
+    color: white;
+} */
+
+::placeholder{
+    color: white;
+    opacity: 0.8;
+}

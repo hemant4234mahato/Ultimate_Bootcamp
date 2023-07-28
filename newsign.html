@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="./css/newsign.css">
+
+    <link rel="stylesheet" type="text/html" href="./css/nav_bar.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/footer.css">   
+    <link rel="stylesheet" href="./css/dark_mode.css">
+    <link rel="stylesheet" href="./css/main_nav.css">
+    <link rel="stylesheet" href="./css/bug_creators.css">
+
+    <script src="https://kit.fontawesome.com/359ca7e543.js" crossorigin="anonymous"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body onload="load()">
+    <nav>
+        <div class="logo">
+            <h3>BUG</h3>
+        </div>
+        <label>
+            <input type="checkbox" name="" id="darkmode">
+            <ion-icon name="sunny" class="sun" onclick="darkMode(false)"></ion-icon>
+            <ion-icon name="moon" class="moon" onclick="darkMode(true)"></ion-icon>
+            <span class="toggle"></span>
+        </label>
+        <ul>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="services1.html">Services</a>
+            </li>
+            <li>
+                <a href="#footer_contact">Contact</a>
+            </li>
+        </ul>
+
+    </nav>
+    <section>
+        <div class="imgbx">
+            <img src="food5.jpg" alt="">
+        </div>
+
+        <div class="contentbx">
+            <div class="formbx">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="signin()">Sign In</button>
+                    <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
+                </div>
+                <div id="signin" class="input-group">
+                    <div class="inputbx">
+                        <span>Username</span>
+                        <input type="text" id="username" placeholder="Enter your Username">
+                    </div>
+                    <div class="inputbx">
+                        <span>Password</span>
+                        <input type="password" id="password" placeholder="Enter your Password">
+                    </div>
+                    <div class="inputbx">
+                        <button onclick="login()" style="text-align: center;
+                        border-radius: 30px;
+                        font-size: 20px;
+                        background: #6445ff;"><p style="padding: 5px; color: white;">Login</p></button>
+                    </div>
+                    <div class="inputbx">
+                        <p>Don't have an account ? <button type="button" class="gr-btn" onclick="signup()">Sign
+                                Up</button>
+                        </p>
+                    </div>
+                </div>
+
+
+                <form id="signup" class="input-group">
+                    <div class="inputbx">
+                        <span>Username</span>
+                        <input type="text" id="username1" required>
+                    </div>
+                    <div class="inputbx">
+                        <span>email</span>
+                        <input type="text" id="email1" required>
+                    </div>
+                    <div class="inputbx">
+                        <span>Password</span>
+                        <input type="password" id="password1" required>
+                    </div>
+                    <div class="inputbx">
+                        <button type="submit" style="text-align: center;
+                        border-radius: 30px;
+                        font-size: 20px;
+                        background: #6445ff;"><p style="padding: 5px; color: white;">SignUp</p></button>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+    </section>
+    <footer>
+
+        <div class="foot">
+            <a href><i class="fa-brands fa-facebook"
+                    style="color: white;font-size: 30px;"></i></a>
+            <a href><i class="fa-brands fa-instagram"
+                    style="color: white;font-size: 30px;"></i></a>
+            <a href><i class="fa-brands fa-twitter"
+                    style="color: white;font-size: 30px;"></i></a>
+            <a href><i class="fa-brands fa-youtube"
+                    style="color: white;font-size: 30px;"></i></a>
+            <a href><i class="fa-brands fa-whatsapp"
+                    style="color: white;font-size: 30px;"></i></a>
+        </div>
+
+        <div class="details">
+
+            <div class="company test lnk">
+                <h3>Company</h4>
+                <ul>
+                    <li><a href>About Us</a></li>
+                    <li><a href>Contributors</a></li>
+                </ul>
+            </div>
+
+            <div class="products test lnk">
+                <h3>Products</h4>
+                <ul>
+                    <li><a href>Readymade Picles</a></li>
+                    <li><a href>Sweets</a></li>
+                    <li><a href>Exotic Spices</a></li>
+                    <li><a href>Sauces</a></li>
+                </ul>
+            </div>
+
+            <div class="useful-links test lnk">
+                <h3>Useful Links</h4>
+                <ul>
+                    <li><a href></a></li>
+                    <li><a href></a></li>
+                    <li><a href></a></li>
+                    <li><a href></a></li>
+                </ul>
+            </div>
+
+            
+        </div>
+
+        <h5 style="margin-top: 0px;color: white;text-align: center;"><i
+                class="fa-regular fa-copyright " style="color: white;"></i>2020-25
+            BugCreators,Inc.All Rights Reserved</h5>
+    </footer>
+
+
+    <script src="./js/dark_mode.js"></script>
+    <script src="login.js"></script>
+    <script src="signup.js"></script>
+
+    <script>
+        var x = document.getElementById("signin");
+        var y = document.getElementById("signup");
+        var z = document.getElementById("btn");
+
+        function signup() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function signin() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    </script>
+</body>
+
+</html>
